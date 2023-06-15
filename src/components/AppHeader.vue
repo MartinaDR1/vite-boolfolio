@@ -1,3 +1,9 @@
+<script>
+    export default {
+        name:'AppHeader'
+    }
+</script>
+
 <template>
     <header>
         <nav class="nav justify-content-center ">
@@ -7,12 +13,6 @@
         </nav>
     </header>
 </template>
-
-<script>
-    export default {
-        name:'AppHeader'
-    }
-</script>
 
 <style lang="scss" scoped>
 @use '../styles/general.scss';
