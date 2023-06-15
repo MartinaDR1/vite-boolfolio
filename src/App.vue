@@ -1,18 +1,15 @@
 <script>
+import AppHeader from './components/AppHeader.vue';
 export default {
-
+    components :{
+        AppHeader
+    }
 }
 </script>
 
 <template>
-    <header>
-        <nav class="nav justify-content-center  ">
-          <a class="nav-link active" href="/" aria-current="page">Home</a>
-          <a class="nav-link" href="/about">About</a>
-          <a class="nav-link" href="/contacts">Contacts</a>
-        </nav>
-    </header>
 
+    <AppHeader></AppHeader>
     <router-view></router-view>
 </template>
 
