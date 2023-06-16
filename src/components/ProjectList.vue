@@ -59,6 +59,9 @@ export default {
                         <h4 class="card-title">{{ project.title }}</h4>
                         <p class="card-text">{{ truncateText(project.description) }}</p>
                     </div>
+                    <router-link :to="{ name: 'single-project', params: { slug: project.slug } }" class="nav-link">
+                        More info
+                    </router-link>
                 </div>
             </div>
         </div>
