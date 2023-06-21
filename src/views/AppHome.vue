@@ -1,19 +1,21 @@
 <script>
 import AppBanner from '../components/AppBanner.vue';
-import ProjectList from '../components/ProjectList.vue';
+import AppJumbotron from '../components/AppJumbotron.vue';
     export default {
-        name:'AppHome',
+        name:'AppContacts',
 
         components:{
-            AppBanner,
-            ProjectList
-        }
+    AppBanner,
+    AppJumbotron
+}
     }
 </script>
 
 <template>
-    <AppBanner title='Home Page'></AppBanner>
-    <ProjectList></ProjectList>
+    <div class="ms_container home">
+        <AppBanner title="Home"></AppBanner>
+        <AppJumbotron></AppJumbotron>
+    </div>
 </template>
 
 

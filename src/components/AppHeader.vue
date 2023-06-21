@@ -7,8 +7,8 @@
 <template>
     <header>
         <nav class="nav justify-content-center ">
-          <a class="nav-link active" href="/" aria-current="page">Home</a>
-          <a class="nav-link" href="/about">About</a>
+          <a class="nav-link" href="/" aria-current="page">Home</a>
+          <a class="nav-link" href="/projects">My Projects</a>
           <a class="nav-link" href="/contacts">Contacts</a>
         </nav>
     </header>

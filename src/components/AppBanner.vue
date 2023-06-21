@@ -9,9 +9,9 @@
 </script>
 
 <template>
-    <div class="bg-dark py-4">
-        <div class="container">
-            <h1>{{ title }}</h1>
+    <div class="py-2">
+        <div class="container text-center">
+            <h3>{{ title }}</h3>
         </div>
     </div>
 </template>

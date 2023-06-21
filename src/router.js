@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import AppHome from './views/AppHome.vue'
-import AppAbout from './views/AppAbout.vue'
+import AppProjects from './views/AppProjects.vue'
 import AppContacts from './views/AppContacts.vue'
 import SingleProject from "./views/SingleProject.vue"
 import NotFound from "./views/NotFoundPage.vue"
@@ -14,9 +14,9 @@ const router = createRouter({
         component: AppHome,
       },
       {
-        path: "/about",
-        name: "about",
-        component: AppAbout,
+        path: "/projects",
+        name: "projects",
+        component: AppProjects,
       },
       {
         path: "/contacts",
