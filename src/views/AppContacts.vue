@@ -100,7 +100,7 @@ export default {
             <a name="" id="" class="btn btn-light mx-2" href="https://github.com/MartinaDR1" role="button">
                 <i class="fa-brands fa-github"></i>
             </a>
-            <a name="" id="" class="btn btn-light mx-2" href="#" role="button">
+            <a name="" id="" class="btn btn-light mx-2" href="https://www.linkedin.com/in/martina-de-rose/" role="button">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
         </div>
