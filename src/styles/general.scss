@@ -1,12 +1,18 @@
 // REMOVE IF USING BOOTSTRAP
 @import "/node_modules/bootstrap/scss/bootstrap";
+body {
+    display: none;
+    margin: 0 !important;
+}
 .ms_container{
     background-color: white;
     height: 33rem;
     width: 70%;
     margin: auto;
     border-radius:30px;
+    border: 1px solid #FAC8CD;
     overflow-y: auto;
+
 }
 ::-webkit-scrollbar{
     width: 6px;
@@ -35,4 +41,13 @@
     border: 2px solid rgba(255, 255, 255, 0.2);
 
     margin-top: 1rem;
+}
+
+.badge{
+    border-radius: 80px;
+    margin-right: 5px;
+}
+
+.bg_table{
+    background-color: #ebcb9d;
 }

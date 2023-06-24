@@ -19,7 +19,7 @@ export default {
 @use './styles/general.scss';
 
 .bg {
-    background-image: url(../../public/sfondo.jpg);
+    background-image: url(../../public/sfondo.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center top 70%;

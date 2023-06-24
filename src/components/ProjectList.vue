@@ -39,6 +39,9 @@ export default {
         },
         nextPage(path) {
             this.getProjects(path)
+        },
+        redirectToProject(slug) {
+            this.$router.push({ name: 'singleProject', params: { slug: slug } });
         }
     },
     mounted() {
@@ -52,9 +55,9 @@ export default {
 <template>
     <section class="projects" v-if="projects && !loading">
         <div class="container py-4">
-            <div class="row row-cols-xs-1 row-cols-md-2 g-4">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-4"> 
                 <div class="col" v-for="project in projects">
-                    <div class="card shadow">
+                    <div class="card shadow"  @click="redirectToProject(project.slug)">
                         <img class="card-img-top" :src="base_API + 'storage/' + project.project_image" alt="Title">
                         <div class="image-overlay">
                             <h4 class="d-flex align-items-center justify-content-center border_card">{{ project.title }}</h4>
@@ -76,7 +79,7 @@ export default {
                                 <div class="col-12">
                                     <router-link :to="{ name: 'single-project', params: { slug: project.slug } }"
                                         class="nav-link pt-5">
-                                        <button type="button" class="btn btn-outline-light">
+                                        <button type="button" class="btn btn-dark bg_table ">
                                             Info 
                                         </button>
                                     </router-link>
@@ -170,9 +173,10 @@ h4 {
     border-radius: 10px;
 }
 
-.badge{
-    border-radius: 80px;
-    margin-right: 5px;
+@media (max-width: 680px) {
+    .card-info{
+        display: none;
+    }
 }
 
 </style>

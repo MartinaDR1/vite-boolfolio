@@ -15,7 +15,7 @@ export default {
         <hr class="line">
         <div class="text text-center py-4">
             <h1 class="text-uppercase">Jr full stack web developer</h1>
-            <a name="" id="" class="btn btn-light text-decoration-none my-3" href="/projects" role="button">Scopri di più</a>
+            <a name="" id="" class="btn btn-dark text-decoration-none my-3 bg_table" href="/projects" role="button">Scopri di più</a>
         </div>
     </div>
 </template>
